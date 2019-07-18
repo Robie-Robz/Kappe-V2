@@ -1,0 +1,47 @@
+.menu{
+    background-color: $menu-bg-color;
+    
+    &__list{
+        
+    }
+    
+    &__item{
+        
+    }
+    &__link{
+        display: block;
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: $menu-link-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: right;
+        padding: 1.8rem 2.4rem;
+        background-image: linear-gradient(to bottom, #333B3F 0%, #2E363A 100%);
+        position: relative;
+        z-index: 1;
+        
+        &::before{
+            content: "";
+            height: 100%;
+            width: 0%;
+            background-color: $menu-link-hover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.3s;
+        }
+        
+        &:hover::before{
+            width: 100%;
+        }
+        
+    
+    }
+    
+    
+    
+
+}
