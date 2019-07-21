@@ -38,7 +38,12 @@
             width: 100%;
         }
         
+        
+        @include mobile-mode{
+            text-align: center;
+        }
     
+        
     }
      
 

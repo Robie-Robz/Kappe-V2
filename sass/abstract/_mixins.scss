@@ -1,0 +1,6 @@
+$bp-mobile:60em;
+
+@mixin mobile-mode{
+    @media only screen and (max-width: $bp-mobile){@content};
+}
+ 

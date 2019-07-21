@@ -7,6 +7,7 @@
     
     perspective: 50rem;
     
+    overflow: hidden;
     
     &__image{
         display: block;
@@ -43,7 +44,7 @@
     }
     
     &:hover &__hover-box{
-        transform: rotateY(-0.9999deg);
+        transform: rotateY(-0.9999deg); /*Solves link animation glitch when item grows */
         
         opacity: 1;
         

@@ -1,6 +1,10 @@
 .container{
     display: flex;
-  
+    
+    
+     @include mobile-mode{
+        flex-direction: column;
+    }
 }
 
 

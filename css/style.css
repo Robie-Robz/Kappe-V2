@@ -33,12 +33,16 @@ html {
       transition: 0.3s; }
     .menu__link:hover::before {
       width: 100%; }
+    @media only screen and (max-width: 60em) {
+      .menu__link {
+        text-align: center; } }
 
 .grid-box {
   flex: 1 0 25rem;
   position: relative;
   align-self: flex-start;
-  perspective: 50rem; }
+  perspective: 50rem;
+  overflow: hidden; }
   .grid-box__image {
     display: block;
     width: 100%; }
@@ -60,6 +64,7 @@ html {
     opacity: 0; }
   .grid-box:hover .grid-box__hover-box {
     transform: rotateY(-0.9999deg);
+    /*Solves link animation glitch when item grows */
     opacity: 1;
     transition: all 0.5s; }
   .grid-box__heading {
@@ -93,6 +98,9 @@ html {
 
 .container {
   display: flex; }
+  @media only screen and (max-width: 60em) {
+    .container {
+      flex-direction: column; } }
 
 .header {
   flex: 0 0 22%;
@@ -111,5 +119,4 @@ html {
   background-color: gray;
   display: flex;
   align-content: flex-start;
-  flex-wrap: wrap;
-  overflow: hidden; }
+  flex-wrap: wrap; }
