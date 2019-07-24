@@ -48,7 +48,9 @@
     
     @include mobile-mode{
         height: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: 1s; /*controls mobile menu open speed*/
     }
      
 
