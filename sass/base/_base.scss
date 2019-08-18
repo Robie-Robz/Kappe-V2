@@ -6,6 +6,10 @@
 
 html{
     font-size: 62.5%;
+    
+    @include large-desktop{
+        font-size: 75%;
+    }
 }
 body{
    

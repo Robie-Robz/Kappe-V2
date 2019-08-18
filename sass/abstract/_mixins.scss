@@ -1,6 +1,12 @@
 $bp-mobile:60em;
 
+$bp-lg-desktop:100em;
+
 @mixin mobile-mode{
     @media only screen and (max-width: $bp-mobile){@content};
+}
+
+@mixin large-desktop{
+    @media only screen and (min-width: $bp-lg-desktop){@content};
 }
  
