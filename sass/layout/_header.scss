@@ -61,4 +61,69 @@
             display: block;
         }
     }
+    
+    
+    &__social-box{
+        display: flex;
+        flex-direction: column;
+        
+         @include mobile-mode{     
+            display: none;
+        }
+    }
+    
+    &__social-list{
+        margin-top: 1.8rem;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &__social-icon{
+        margin-right: 2rem;
+        transition: 0.1s;
+        
+        &:hover{
+            transform: scale(1.2);
+    
+        }
+    }
+    &__social-link{
+        
+        &--fb{
+            color: #3b5998;
+        }
+        
+        &--twit{
+            color: #1da1f2;
+        }
+        
+        &--gplus{
+            color: #CC3333;
+        }
+        &--linked{
+            color: #0077B5;
+        }
+        &--pin{
+            color: #c8232c;
+        }
+        &--ytube{
+            color: #c4302b;
+        }
+    }
+    
+    &__copy{
+        display: inline-block;
+        text-align:right;
+        margin-right: 2rem;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        color: #6b7072;
+        font-weight: 300;
+        margin-top: 1.8rem;
+        
+         @include mobile-mode{     
+            display: none;
+        }
+    }
 }
