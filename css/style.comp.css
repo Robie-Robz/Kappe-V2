@@ -5,12 +5,12 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 80em) {
+  @media only screen and (min-width: 87.5em) {
     html {
       font-size: 75%; } }
   @media only screen and (min-width: 96.125em) {
     html {
-      font-size: 85%; } }
+      font-size: 87.5%; } }
 
 .menu {
   background-color: #242b2e; }
@@ -142,23 +142,24 @@ html {
         display: block; } }
   .header__social-box {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-right: 2rem; }
     @media only screen and (max-width: 60em) {
       .header__social-box {
         display: none; } }
   .header__social-list {
-    margin-top: 1.8rem;
-    margin-right: 2rem;
     list-style: none;
     display: flex;
     justify-content: flex-end; }
   .header__social-icon {
-    margin-right: 1rem;
+    margin-left: 1rem;
     transition: 0.1s; }
     .header__social-icon:hover {
       transform: scale(1.2); }
   .header__social-link--fb {
-    color: #3b5998; }
+    color: #3b5998;
+    margin-left: 1rem; }
   .header__social-link--twit {
     color: #1da1f2; }
   .header__social-link--gplus {
@@ -172,7 +173,6 @@ html {
   .header__copy {
     display: inline-block;
     text-align: right;
-    margin-right: 2rem;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
     color: #6b7072;

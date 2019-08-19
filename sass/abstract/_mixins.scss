@@ -1,8 +1,8 @@
 $bp-mobile:60em;
 
-$bp-md-desktop: 80em;
+$bp-md-desktop: 87.5em; //1400px
 
-$bp-lg-desktop:96.125em;
+$bp-lg-desktop:96.125em; //1538px
 
 @mixin mobile-mode{
     @media only screen and (max-width: $bp-mobile){@content};
