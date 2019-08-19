@@ -5,9 +5,12 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 100em) {
+  @media only screen and (min-width: 80em) {
     html {
       font-size: 75%; } }
+  @media only screen and (min-width: 96.125em) {
+    html {
+      font-size: 85%; } }
 
 .menu {
   background-color: #242b2e; }
@@ -34,7 +37,7 @@ html {
       left: 0;
       z-index: -1;
       transition: 0.3s; }
-    .menu__link:hover::before {
+    .menu__link:hover::before, .menu__link--active:before {
       width: 100%; }
     @media only screen and (max-width: 60em) {
       .menu__link {
@@ -101,7 +104,8 @@ html {
     color: white; }
 
 .container {
-  display: flex; }
+  display: flex;
+  min-height: 100vh; }
   @media only screen and (max-width: 60em) {
     .container {
       flex-direction: column; } }
@@ -144,11 +148,12 @@ html {
         display: none; } }
   .header__social-list {
     margin-top: 1.8rem;
+    margin-right: 2rem;
     list-style: none;
     display: flex;
     justify-content: flex-end; }
   .header__social-icon {
-    margin-right: 2rem;
+    margin-right: 1rem;
     transition: 0.1s; }
     .header__social-icon:hover {
       transform: scale(1.2); }

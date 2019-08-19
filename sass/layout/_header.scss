@@ -74,13 +74,15 @@
     
     &__social-list{
         margin-top: 1.8rem;
+        margin-right: 2rem;
         list-style: none;
         display: flex;
         justify-content: flex-end;
     }
     
     &__social-icon{
-        margin-right: 2rem;
+        
+        margin-right: 1rem;
         transition: 0.1s;
         
         &:hover{
